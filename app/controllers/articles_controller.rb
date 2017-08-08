@@ -29,7 +29,7 @@ class ArticlesController < ApplicationController
     if @article.update(article_params)
       redirect_to articles_path
     else
-      render :new
+      render :edit
     end
   end
 

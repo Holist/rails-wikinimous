@@ -1,0 +1,5 @@
+<div class="wrapper">
+  <h2 class="h2-title"><%= @article.title %></h2>
+  <div class="p-content-extract"> <%= to_markdown(@article.content).html_safe %></div>
+  <%= link_to "Index", articles_path, class: "btn btn-default" %>
+</div>

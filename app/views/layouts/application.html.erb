@@ -3,12 +3,16 @@
   <head>
     <title>RailsWikinimous</title>
     <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <div class="navbar-menu">
+    <h1>Wikinimous</h1>
+    <%= link_to "New article", new_article_path, class: "btn btn-primary btn-new-article text-center" %>
+  </div>
     <%= yield %>
   </body>
 </html>
